@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Nom du Centre] | Centre de formation professionnelle à Lomé</title>
+<meta name="description" content="Découvrez nos formations professionnelles à Lomé : informatique, gestion, marketing, langues et développement des compétences. Inscription rapide via WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[Nom du Centre] | Centre de formation professionnelle à Lomé">
+<meta property="og:description" content="Des formations pratiques et adaptées aux exigences du monde professionnel.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1723987135977-ae935608939e?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:locale" content="fr_TG">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23102A43%22/><text x=%2250%22 y=%2268%22 font-size=%2250%22 fill=%22%23F4A623%22 text-anchor=%22middle%22>🎓</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "[NOM DU CENTRE]",
+  "image": "https://images.unsplash.com/photo-1723987135977-ae935608939e",
+  "telephone": "+228 XX XX XX XX",
+  "address": { "@type": "PostalAddress", "addressLocality": "Lomé", "addressCountry": "TG" },
+  "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-14:00"
+}
+</script>
+</head>
+<body>
+
+<!-- ============================================================ NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-main" id="mainNavbar">
+  <div class="container container-xl">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-mark"><i class="bi bi-mortarboard-fill"></i></span>
+      <span data-center-name>[NOM DU CENTRE]</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-label="Ouvrir le menu">
+      <i class="bi bi-list text-white fs-1"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mx-auto my-3 my-lg-0 gap-lg-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="formations.html">Formations</a></li>
+        <li class="nav-item"><a class="nav-link" href="formateurs.html">Formateurs</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#vie-du-centre">Vie du centre</a></li>
+        <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
+        <span class="navbar-phone"><i class="bi bi-telephone-fill"></i> <span data-center-phone>+228 XX XX XX XX</span></span>
+        <a href="inscription.html" class="btn-gold btn-sm-pill text-center">S'inscrire</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================== HERO -->
+<header class="hero" id="accueil">
+  <div class="container container-xl">
+    <div class="row">
+      <div class="col-lg-7 reveal">
+        <span class="hero-badge"><i class="bi bi-mortarboard-fill text-gold"></i> Formez-vous pour votre avenir</span>
+        <h1>DÉVELOPPEZ VOS COMPÉTENCES, <span class="accent">CONSTRUISEZ VOTRE AVENIR</span></h1>
+        <p class="lead">Des formations pratiques et adaptées aux exigences du monde professionnel pour vous aider à développer des compétences concrètes et durables.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="formations.html" class="btn-outline-light-custom"><i class="bi bi-grid-fill me-2"></i>Découvrir nos formations</a>
+          <a href="inscription.html" class="btn-gold"><i class="bi bi-pencil-square me-2"></i>S'inscrire maintenant</a>
+        </div>
+        <div class="trust-row">
+          <div class="item"><i class="bi bi-check-circle-fill"></i> Formations professionnelles</div>
+          <div class="item"><i class="bi bi-check-circle-fill"></i> Formateurs expérimentés</div>
+          <div class="item"><i class="bi bi-check-circle-fill"></i> Accompagnement personnalisé</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================================================== SEARCH CARD -->
+  <div class="container container-xl">
+    <div class="search-card reveal">
+      <h5><i class="bi bi-search text-gold me-2"></i>Trouvez la formation qui vous correspond</h5>
+      <form id="searchForm" class="row g-3 align-items-end" onsubmit="event.preventDefault(); window.location.href='formations.html';">
+        <div class="col-md-5 col-12">
+          <label>Que souhaitez-vous apprendre ?</label>
+          <input type="text" class="form-control" placeholder="Ex : développement web, comptabilité...">
+        </div>
+        <div class="col-md-4 col-6">
+          <label>Domaine</label>
+          <select class="form-select">
+            <option>Tous les domaines</option>
+            <option>Informatique</option>
+            <option>Gestion</option>
+            <option>Comptabilité</option>
+            <option>Marketing</option>
+            <option>Communication</option>
+            <option>Langues</option>
+            <option>Commerce</option>
+            <option>Entrepreneuriat</option>
+            <option>Formation professionnelle</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="col-md-3 col-6">
+          <label>Durée</label>
+          <select class="form-select">
+            <option>Toutes durées</option>
+            <option>Courte durée</option>
+            <option>1 à 3 mois</option>
+            <option>3 à 6 mois</option>
+            <option>6 à 12 mois</option>
+            <option>Plus d'un an</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn-gold"><i class="bi bi-search me-2"></i>Rechercher</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ CHIFFRES -->
+<section class="stats-strip">
+  <div class="container container-xl">
+    <div class="row g-0 text-center">
+      <div class="col-6 col-lg-3 stat-item reveal"><div class="num"><span data-counter="10" data-suffix="+">0</span></div><div class="label">Années d'expérience</div></div>
+      <div class="col-6 col-lg-3 stat-item reveal"><div class="num"><span data-counter="2500" data-suffix="+">0</span></div><div class="label">Apprenants formés</div></div>
+      <div class="col-6 col-lg-3 stat-item reveal"><div class="num"><span data-counter="30" data-suffix="+">0</span></div><div class="label">Formations</div></div>
+      <div class="col-6 col-lg-3 stat-item reveal"><div class="num"><span data-counter="95" data-suffix="%">0</span></div><div class="label">Apprenants satisfaits</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== NOS FORMATIONS ====== -->
+<section class="section-pad">
+  <div class="container container-xl">
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 gap-3 reveal">
+      <div>
+        <span class="eyebrow">Nos formations</span>
+        <h2 class="section-title mb-1">Développez les compétences dont vous avez besoin</h2>
+        <p class="section-lead mb-0">Un aperçu de nos domaines de formation phares.</p>
+      </div>
+      <a href="formations.html" class="btn-outline-navy text-nowrap">Voir toutes les formations</a>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="domain-card">
+          <div class="icon"><i class="bi bi-code-slash"></i></div>
+          <h5>Informatique</h5>
+          <p class="mb-0 small">Développement web, logiciels, bases de données et outils numériques.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="domain-card">
+          <div class="icon"><i class="bi bi-bar-chart-fill"></i></div>
+          <h5>Gestion &amp; Comptabilité</h5>
+          <p class="mb-0 small">Gestion d'entreprise, comptabilité, finance et administration.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="domain-card">
+          <div class="icon"><i class="bi bi-megaphone-fill"></i></div>
+          <h5>Marketing &amp; Communication</h5>
+          <p class="mb-0 small">Marketing digital, communication, réseaux sociaux et stratégie commerciale.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="domain-card">
+          <div class="icon"><i class="bi bi-translate"></i></div>
+          <h5>Langues</h5>
+          <p class="mb-0 small">Formations adaptées aux différents niveaux, dont l'anglais professionnel.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="domain-card">
+          <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
+          <h5>Entrepreneuriat</h5>
+          <p class="mb-0 small">Développez vos compétences pour créer et gérer votre activité.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="domain-card">
+          <div class="icon"><i class="bi bi-tools"></i></div>
+          <h5>Formations professionnelles</h5>
+          <p class="mb-0 small">Des formations pratiques orientées vers l'emploi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== PROCHAINES SESSIONS = -->
+<section class="section-pad bg-grey-light">
+  <div class="container container-xl">
+    <div class="text-center mx-auto mb-5 reveal" style="max-width:640px">
+      <span class="eyebrow justify-content-center">Sessions à venir</span>
+      <h2 class="section-title">Prochaines sessions</h2>
+    </div>
+    <div class="row g-4" id="sessionsPreview"></div>
+  </div>
+</section>
+
+<!-- ================================================== À PROPOS TEASER ===== -->
+<section class="section-pad">
+  <div class="container container-xl">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6 reveal-scale">
+        <div class="rounded-4 overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&w=1000&q=80" alt="Apprenants en formation au centre">
+        </div>
+      </div>
+      <div class="col-lg-6 reveal">
+        <span class="eyebrow">Notre centre</span>
+        <h2 class="section-title">Un environnement pensé pour votre réussite</h2>
+        <p>Notre centre accompagne chaque apprenant avec des formations pratiques, un encadrement de qualité et une pédagogie tournée vers les réalités du monde professionnel togolais.</p>
+        <div class="row g-4 mt-2">
+          <div class="col-sm-4">
+            <div class="value-card px-0">
+              <div class="icon"><i class="bi bi-bullseye"></i></div>
+              <h6 class="mb-1">Excellence</h6>
+              <p class="small mb-0">La qualité de la formation au cœur de notre approche.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="value-card px-0">
+              <div class="icon"><i class="bi bi-people-fill"></i></div>
+              <h6 class="mb-1">Accompagnement</h6>
+              <p class="small mb-0">Chaque apprenant bénéficie d'un suivi adapté.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="value-card px-0">
+              <div class="icon"><i class="bi bi-lightbulb-fill"></i></div>
+              <h6 class="mb-1">Innovation</h6>
+              <p class="small mb-0">Des formations adaptées aux besoins du marché.</p>
+            </div>
+          </div>
+        </div>
+        <a href="a-propos.html" class="btn-navy d-inline-block mt-4">En savoir plus sur nous</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== POURQUOI NOUS ====== -->
+<section class="section-pad bg-grey-light">
+  <div class="container container-xl">
+    <div class="text-center mx-auto mb-5 reveal" style="max-width:640px">
+      <span class="eyebrow justify-content-center">Nos atouts</span>
+      <h2 class="section-title">Pourquoi choisir notre centre ?</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 reveal"><div class="why-item"><div class="icon"><i class="bi bi-person-badge-fill"></i></div><div><h6 class="mb-1">Formateurs qualifiés</h6><p class="small mb-0">Des professionnels expérimentés dans leur domaine.</p></div></div></div>
+      <div class="col-md-6 col-lg-4 reveal"><div class="why-item"><div class="icon"><i class="bi bi-journal-check"></i></div><div><h6 class="mb-1">Programmes pratiques</h6><p class="small mb-0">Une pédagogie orientée vers la mise en pratique.</p></div></div></div>
+      <div class="col-md-6 col-lg-4 reveal"><div class="why-item"><div class="icon"><i class="bi bi-display"></i></div><div><h6 class="mb-1">Équipements modernes</h6><p class="small mb-0">Des salles et outils adaptés à chaque formation.</p></div></div></div>
+      <div class="col-md-6 col-lg-4 reveal"><div class="why-item"><div class="icon"><i class="bi bi-person-check-fill"></i></div><div><h6 class="mb-1">Accompagnement personnalisé</h6><p class="small mb-0">Un suivi individuel tout au long du parcours.</p></div></div></div>
+      <div class="col-md-6 col-lg-4 reveal"><div class="why-item"><div class="icon"><i class="bi bi-patch-check-fill"></i></div><div><h6 class="mb-1">Certificats de formation</h6><p class="small mb-0">Une reconnaissance délivrée à l'issue du parcours.</p></div></div></div>
+      <div class="col-md-6 col-lg-4 reveal"><div class="why-item"><div class="icon"><i class="bi bi-signpost-split-fill"></i></i></div><div><h6 class="mb-1">Orientation professionnelle</h6><p class="small mb-0">Un accompagnement vers l'insertion professionnelle.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== TARIFS ============== -->
+<section class="section-pad" id="tarifs">
+  <div class="container container-xl">
+    <div class="text-center mx-auto mb-5 reveal" style="max-width:640px">
+      <span class="eyebrow justify-content-center">Tarification</span>
+      <h2 class="section-title">Des formations accessibles et adaptées à vos objectifs</h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="price-plan h-100">
+          <h5>Formation courte</h5>
+          <p class="mb-0 small">Quelques semaines pour une compétence ciblée</p>
+          <div class="amount">À partir de <span>[PRIX]</span></div>
+          <a href="#" data-whatsapp-default class="btn-navy w-100 text-center d-block">Demander les tarifs</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="price-plan featured h-100">
+          <span class="ribbon">Populaire</span>
+          <h5 class="text-white">Formation standard</h5>
+          <p class="mb-0 small">Plusieurs mois, le meilleur équilibre</p>
+          <div class="amount text-white">À partir de <span>[PRIX]</span></div>
+          <a href="#" data-whatsapp-default class="btn-gold w-100 text-center d-block">Demander les tarifs</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="price-plan h-100">
+          <h5>Formation professionnelle</h5>
+          <p class="mb-0 small">Parcours complet et certifiant</p>
+          <div class="amount">À partir de <span>[PRIX]</span></div>
+          <a href="#" data-whatsapp-default class="btn-navy w-100 text-center d-block">Demander les tarifs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== FORMATEURS ========== -->
+<section class="section-pad bg-grey-light">
+  <div class="container container-xl">
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 gap-3 reveal">
+      <div>
+        <span class="eyebrow">Notre équipe</span>
+        <h2 class="section-title mb-0">Apprenez avec des professionnels expérimentés</h2>
+      </div>
+      <a href="formateurs.html" class="btn-outline-navy text-nowrap">Voir tous les formateurs</a>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="teacher-card">
+          <div class="photo-wrap"><img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?auto=format&fit=crop&w=400&q=80" alt="Jean K., formateur en informatique"><span class="badge-exp">8 ans</span></div>
+          <h6 class="mb-1">Jean K.</h6>
+          <div class="spec">Formateur en Informatique</div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="teacher-card">
+          <div class="photo-wrap"><img src="https://images.unsplash.com/photo-1573496527892-904f897eb744?auto=format&fit=crop&w=400&q=80" alt="Ama D., formatrice en gestion"><span class="badge-exp">6 ans</span></div>
+          <h6 class="mb-1">Ama D.</h6>
+          <div class="spec">Formatrice en Gestion &amp; Comptabilité</div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="teacher-card">
+          <div class="photo-wrap"><img src="https://images.unsplash.com/photo-1614890085618-0e1054da74f8?auto=format&fit=crop&w=400&q=80" alt="Kossi M., formateur en marketing digital"><span class="badge-exp">5 ans</span></div>
+          <h6 class="mb-1">Kossi M.</h6>
+          <div class="spec">Formateur en Marketing Digital</div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal">
+        <div class="teacher-card">
+          <div class="photo-wrap"><img src="https://images.unsplash.com/photo-1614023342667-6f060e9d1e04?auto=format&fit=crop&w=400&q=80" alt="Yawo T., formateur en langues"><span class="badge-exp">7 ans</span></div>
+          <h6 class="mb-1">Yawo T.</h6>
+          <div class="spec">Formateur en Anglais Professionnel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== CERTIFICATIONS / PARTENAIRES = -->
+<section class="section-pad">
+  <div class="container container-xl">
+    <div class="text-center mx-auto mb-5 reveal" style="max-width:640px">
+      <span class="eyebrow justify-content-center">Certifications</span>
+      <h2 class="section-title">Des formations qui valorisent vos compétences</h2>
+      <p class="section-lead mx-auto">Nos apprenants reçoivent un certificat de fin de formation. Voici quelques-uns de nos partenaires.</p>
+    </div>
+    <div id="partnersCarousel" class="carousel slide reveal" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-3">
+            <div class="col-3"><div class="partner-logo">[LOGO PARTENAIRE 1]</div></div>
+            <div class="col-3"><div class="partner-logo">[LOGO PARTENAIRE 2]</div></div>
+            <div class="col-3"><div class="partner-logo">[LOGO PARTENAIRE 3]</div></div>
+            <div class="col-3"><div class="partner-logo">[LOGO PARTENAIRE 4]</div></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-3"><div class="partner-logo">[LOGO PARTENAIRE 5]</div></div>
+            <div class="col-3"><div class="partner-logo">[LOGO PARTENAIRE 6]</div></div>
+            <div class="col-3"><div class="partner-logo">[LOGO PARTENAIRE 7]</div></div>
+            <div class="col-3"><div class="partner-logo">[LOGO PARTENAIRE 8]</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== VIE DU CENTRE ======= -->
+<section class="section-pad bg-grey-light" id="vie-du-centre">
+  <div class="container container-xl">
+    <div class="text-center mx-auto mb-5 reveal" style="max-width:640px">
+      <span class="eyebrow justify-content-center">Vie du centre</span>
+      <h2 class="section-title">Notre centre en images</h2>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-lg-4 reveal" style="height:260px"><div class="gallery-item h-100"><img src="https://images.unsplash.com/photo-1643199187247-b3b6009bf0bb?auto=format&fit=crop&w=700&q=80" alt="Salle informatique moderne"><div class="overlay">Salle informatique</div></div></div>
+      <div class="col-6 col-lg-4 reveal" style="height:260px"><div class="gallery-item h-100"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=700&q=80" alt="Cours en présentiel"><div class="overlay">Cours en présentiel</div></div></div>
+      <div class="col-6 col-lg-4 reveal" style="height:260px"><div class="gallery-item h-100"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80" alt="Atelier pratique"><div class="overlay">Atelier pratique</div></div></div>
+      <div class="col-6 col-lg-4 reveal" style="height:200px"><div class="gallery-item h-100"><img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&w=700&q=80" alt="Étudiants en groupe"><div class="overlay">Étudiants en groupe</div></div></div>
+      <div class="col-6 col-lg-4 reveal" style="height:200px"><div class="gallery-item h-100"><img src="https://images.unsplash.com/photo-1643199121319-b3b5695e4acb?auto=format&fit=crop&w=700&q=80" alt="Formation professionnelle pratique"><div class="overlay">Formation pratique</div></div></div>
+      <div class="col-6 col-lg-4 reveal" style="height:200px"><div class="gallery-item h-100"><img src="https://images.unsplash.com/photo-1512238972088-8acb84db0771?auto=format&fit=crop&w=700&q=80" alt="Espace d'étude"><div class="overlay">Espace d'étude</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== DÉBOUCHÉS =========== -->
+<section class="section-pad">
+  <div class="container container-xl">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6 reveal">
+        <span class="eyebrow">Orientation</span>
+        <h2 class="section-title">Préparez-vous au monde professionnel</h2>
+        <p>Au-delà de l'apprentissage technique, nous accompagnons chaque apprenant dans la construction de son projet professionnel.</p>
+        <div class="row g-3 mt-2">
+          <div class="col-sm-6 d-flex gap-2"><i class="bi bi-check2-circle text-blue fs-5"></i><span>Insertion professionnelle</span></div>
+          <div class="col-sm-6 d-flex gap-2"><i class="bi bi-check2-circle text-blue fs-5"></i><span>Stages en entreprise</span></div>
+          <div class="col-sm-6 d-flex gap-2"><i class="bi bi-check2-circle text-blue fs-5"></i><span>Accompagnement individuel</span></div>
+          <div class="col-sm-6 d-flex gap-2"><i class="bi bi-check2-circle text-blue fs-5"></i><span>Appui à l'entrepreneuriat</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal-scale">
+        <div class="rounded-4 overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1531496730074-83b638c0a7ac?auto=format&fit=crop&w=1000&q=80" alt="Étudiants dans un environnement professionnel">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== TÉMOIGNAGES ========== -->
+<section class="section-pad bg-grey-light">
+  <div class="container container-xl">
+    <div class="text-center mx-auto mb-5 reveal" style="max-width:640px">
+      <span class="eyebrow justify-content-center">Témoignages</span>
+      <h2 class="section-title">Ils ont choisi notre centre</h2>
+    </div>
+    <div id="reviewCarousel" class="carousel slide reveal" data-bs-ride="carousel" data-bs-interval="6000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="review-card">
+                <div class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="mb-4">« Une excellente formation, avec des formateurs disponibles et un accompagnement très sérieux. »</p>
+                <div class="d-flex align-items-center gap-2"><div class="avatar">K.A.</div><div><div class="fw-semibold small">Koffi A.</div><div class="small text-secondary">Ancien apprenant</div></div></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="review-card">
+                <div class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="mb-4">« Formation très pratique, j'ai pu directement appliquer ce que j'ai appris dans mon travail. »</p>
+                <div class="d-flex align-items-center gap-2"><div class="avatar">A.S.</div><div><div class="fw-semibold small">Afi S.</div><div class="small text-secondary">Ancienne apprenante</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="review-card">
+                <div class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="mb-4">« Le suivi personnalisé fait toute la différence. Je recommande vivement ce centre. »</p>
+                <div class="d-flex align-items-center gap-2"><div class="avatar">M.D.</div><div><div class="fw-semibold small">Mawuli D.</div><div class="small text-secondary">Ancien apprenant</div></div></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="review-card">
+                <div class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="mb-4">« Grâce à cette formation, j'ai pu lancer ma propre petite entreprise avec confiance. »</p>
+                <div class="d-flex align-items-center gap-2"><div class="avatar">E.K.</div><div><div class="fw-semibold small">Essi K.</div><div class="small text-secondary">Ancienne apprenante</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== LOCALISATION ======== -->
+<section class="section-pad">
+  <div class="container container-xl">
+    <div class="text-center mx-auto mb-5 reveal" style="max-width:640px">
+      <span class="eyebrow justify-content-center">Localisation</span>
+      <h2 class="section-title">Nous trouver à Lomé</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-5 reveal">
+        <div class="contact-info-item"><div class="icon"><i class="bi bi-geo-alt-fill"></i></div><div><h6 class="mb-1">Adresse</h6><p class="mb-0" data-center-address>[ADRESSE], Lomé, Togo</p></div></div>
+        <div class="contact-info-item"><div class="icon"><i class="bi bi-telephone-fill"></i></div><div><h6 class="mb-1">Téléphone</h6><p class="mb-0"><a href="#" data-center-phone-href class="text-dark text-decoration-none" data-center-phone>+228 XX XX XX XX</a></p></div></div>
+        <div class="contact-info-item"><div class="icon"><i class="bi bi-whatsapp"></i></div><div><h6 class="mb-1">WhatsApp</h6><p class="mb-0"><a href="#" data-whatsapp-default class="text-dark text-decoration-none">Discuter maintenant</a></p></div></div>
+        <div class="contact-info-item"><div class="icon"><i class="bi bi-envelope-fill"></i></div><div><h6 class="mb-1">Email</h6><p class="mb-0"><a href="#" data-center-email-href class="text-dark text-decoration-none" data-center-email>[EMAIL]</a></p></div></div>
+        <div class="contact-info-item"><div class="icon"><i class="bi bi-clock-fill"></i></div><div><h6 class="mb-1">Horaires</h6><ul class="list-unstyled mb-0 small" data-center-hours style="max-width:280px"></ul></div></div>
+      </div>
+      <div class="col-lg-7 reveal">
+        <div class="map-wrap"><iframe data-maps-src src="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation du centre sur Google Maps"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== FAQ =================== -->
+<section class="section-pad bg-grey-light" id="faq">
+  <div class="container container-xl">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="text-center mb-5 reveal">
+          <span class="eyebrow justify-content-center">Questions fréquentes</span>
+          <h2 class="section-title">Vous avez des questions ?</h2>
+        </div>
+        <div class="accordion reveal" id="faqAccordion">
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Quelles formations proposez-vous ?</button></h2><div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Informatique, gestion, comptabilité, marketing, langues, entrepreneuriat et formations professionnelles. Consultez la page « Formations » pour la liste complète.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Qui peut s'inscrire ?</button></h2><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Nos formations sont ouvertes à tous, débutants comme professionnels en reconversion, selon les prérequis propres à chaque formation.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Quels sont les critères d'admission ?</button></h2><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Les critères varient selon la formation choisie (niveau d'étude, test de positionnement, expérience). Ils sont indiqués sur la fiche de chaque formation.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Combien coûtent les formations ?</button></h2><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Les tarifs varient selon la formation et sa durée. Contactez-nous pour connaître le tarif précis de la formation qui vous intéresse.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Quelle est la durée des formations ?</button></h2><div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">De quelques semaines à plusieurs mois selon le programme choisi. La durée exacte figure sur chaque fiche formation.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">Les formations sont-elles certifiantes ?</button></h2><div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Oui, un certificat ou une attestation de fin de formation est délivré à l'issue de chaque parcours.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">Quels sont les horaires ?</button></h2><div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Selon la formation : cours de jour, de soir ou de weekend, pour s'adapter aux disponibilités de chacun.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">Peut-on suivre les cours le soir ou le weekend ?</button></h2><div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Oui, plusieurs formations proposent des créneaux en soirée ou le weekend, indiqués sur chaque fiche formation.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">Les formations sont-elles pratiques ?</button></h2><div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Oui, chaque formation comprend une part importante de mise en pratique et de projets concrets.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">Comment s'inscrire ?</button></h2><div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Via le formulaire d'inscription en ligne sur ce site, ou directement par WhatsApp en indiquant la formation souhaitée.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">Quels documents faut-il fournir ?</button></h2><div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Une pièce d'identité et, selon la formation, un justificatif de niveau d'étude. La liste exacte vous sera communiquée à l'inscription.</div></div></div>
+          <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12">Peut-on payer en plusieurs fois ?</button></h2><div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Des facilités de paiement peuvent être proposées selon la formation. Contactez notre équipe pour en discuter.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container container-xl">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="brand"><span class="brand-mark"><i class="bi bi-mortarboard-fill"></i></span><span data-center-name>[NOM DU CENTRE]</span></div>
+        <p class="mb-3" data-center-slogan>Votre avenir commence par une bonne formation.</p>
+        <div class="footer-social">
+          <a href="#" data-social-facebook aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" data-social-instagram aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" data-social-linkedin aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" data-social-tiktok aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="#" data-whatsapp-default aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Navigation</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 small">
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="formateurs.html">Formateurs</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Formations</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 small">
+          <li>Informatique</li>
+          <li>Gestion</li>
+          <li>Marketing</li>
+          <li>Langues</li>
+          <li>Professionnel</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6>Contact</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 small">
+          <li><i class="bi bi-telephone-fill me-2"></i><span data-center-phone>+228 XX XX XX XX</span></li>
+          <li><i class="bi bi-whatsapp me-2"></i><a href="#" data-whatsapp-default>Écrire sur WhatsApp</a></li>
+          <li><i class="bi bi-envelope-fill me-2"></i><span data-center-email>[EMAIL]</span></li>
+          <li><i class="bi bi-geo-alt-fill me-2"></i>Lomé, Togo</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center text-sm-start d-flex flex-column flex-sm-row justify-content-between gap-2">
+      <span>© <span id="footerYear">2026</span> <span data-center-name>[NOM DU CENTRE]</span>. Tous droits réservés.</span>
+      <span>Conçu avec soin à Lomé, Togo 🇹🇬</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" data-whatsapp-default class="whatsapp-float" aria-label="Contacter sur WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <span class="lightbox-close" id="lightboxClose"><i class="bi bi-x-lg"></i></span>
+  <img src="" alt="" id="lightboxImage">
+</div>
+
+<!-- ============================================================ MODAL DÉTAILS FORMATION -->
+<div class="modal fade modal-formation" id="formationModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <div class="text-gold small fw-bold text-uppercase" id="fmCategory"></div>
+          <h5 class="modal-title mb-0" id="fmTitle"></h5>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <div class="fd-hero-img"><img id="fmImage" src="" alt="Formation"></div>
+        <div class="fd-info">
+          <p id="fmDesc" class="mb-3"></p>
+          <div class="fd-spec-grid">
+            <div class="fd-spec-item"><i class="bi bi-clock-fill"></i><span id="fmDuration"></span></div>
+            <div class="fd-spec-item"><i class="bi bi-bar-chart-fill"></i><span id="fmLevel"></span></div>
+            <div class="fd-spec-item"><i class="bi bi-easel-fill"></i><span id="fmMode"></span></div>
+            <div class="fd-spec-item"><i class="bi bi-alarm-fill"></i><span id="fmSchedule"></span></div>
+            <div class="fd-spec-item"><i class="bi bi-people-fill"></i><span id="fmSeats"></span></div>
+            <div class="fd-spec-item"><i class="bi bi-calendar3"></i><span id="fmStartDate"></span></div>
+          </div>
+          <h6 class="mt-4 mb-2">Programme</h6>
+          <div id="fmModules"></div>
+          <h6 class="mt-4 mb-2">Prérequis</h6>
+          <p id="fmPrerequisites" class="small"></p>
+          <h6 class="mt-3 mb-2">Débouchés</h6>
+          <p id="fmOutcomes" class="small"></p>
+          <p class="small mb-0"><strong>Certification :</strong> <span id="fmCertification"></span></p>
+        </div>
+      </div>
+      <div class="fd-sticky-cta">
+        <a href="#" id="fmInscrireBtn" class="btn-gold flex-fill text-center">Je souhaite m'inscrire</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/formations.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const upcoming = FORMATIONS.filter(f => f.status !== "closed").slice(0,3);
+    document.getElementById("sessionsPreview").innerHTML = upcoming.map(f => `
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="session-card">
+          <span class="status-pill ${f.status}">${f.statusLabel}</span>
+          <h5>${f.title}</h5>
+          <ul class="session-meta">
+            <li><i class="bi bi-calendar-event"></i> Début : ${f.startDate}</li>
+            <li><i class="bi bi-clock"></i> Durée : ${f.duration}</li>
+            <li><i class="bi bi-alarm"></i> ${f.schedule}</li>
+            <li><i class="bi bi-geo-alt"></i> ${f.location}</li>
+          </ul>
+          <a href="inscription.html?id=${f.id}" class="btn-gold w-100 text-center d-block">S'inscrire</a>
+        </div>
+      </div>`).join("");
+    if (window.initRevealOnScroll) window.initRevealOnScroll();
+  });
+</script>
+</body>
+</html>
